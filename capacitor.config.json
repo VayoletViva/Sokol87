@@ -1,7 +1,7 @@
 {
   "appId": "com.celesteal.sokol87",
   "appName": "СОКОЛ-87",
-  "webDir": ".",
+  "webDir": "www",
   "android": {
     "allowMixedContent": false,
     "captureInput": true,
