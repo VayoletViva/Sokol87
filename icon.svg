@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#0a2417"/>
+      <stop offset="100%" stop-color="#020604"/>
+    </radialGradient>
+    <linearGradient id="jet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7dffaa"/>
+      <stop offset="100%" stop-color="#39ff7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <!-- кольцо прицела -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#0e3a1c" stroke-width="3"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#0e3a1c" stroke-width="2" stroke-dasharray="6 10"/>
+  <line x1="256" y1="40" x2="256" y2="90" stroke="#1c8a44" stroke-width="3"/>
+  <line x1="256" y1="422" x2="256" y2="472" stroke="#1c8a44" stroke-width="3"/>
+  <line x1="40" y1="256" x2="90" y2="256" stroke="#1c8a44" stroke-width="3"/>
+  <line x1="422" y1="256" x2="472" y2="256" stroke="#1c8a44" stroke-width="3"/>
+  <!-- силуэт истребителя (вид сверху, нос вверх) -->
+  <g fill="url(#jet)" transform="translate(256 262) scale(1.05)">
+    <path d="M 0 -140
+             L 14 -70
+             L 18 -10
+             L 120 40
+             L 120 66
+             L 20 44
+             L 16 96
+             L 46 120
+             L 46 134
+             L 0 120
+             L -46 134
+             L -46 120
+             L -16 96
+             L -20 44
+             L -120 66
+             L -120 40
+             L -18 -10
+             L -14 -70
+             Z"/>
+  </g>
+  <!-- форсажное свечение -->
+  <ellipse cx="256" cy="392" rx="14" ry="30" fill="#ffcc44" opacity="0.55"/>
+  <ellipse cx="256" cy="386" rx="7" ry="18" fill="#fff4d0" opacity="0.8"/>
+  <!-- подпись -->
+  <text x="256" y="476" font-family="Courier New, monospace" font-size="34" font-weight="bold"
+        fill="#39ff7a" text-anchor="middle" letter-spacing="6">СОКОЛ-87</text>
+</svg>

@@ -1,0 +1,25 @@
+СОКОЛ-87 → APK · БЫСТРЫЙ СТАРТ
+═══════════════════════════════════
+
+Игра готова в www/index.html (offline). Собери APK одним из способов:
+
+▶ ОНЛАЙН (проще всего, без установки SDK):
+  1. Залей эту папку в репозиторий GitHub
+  2. Actions → "Сборка APK (СОКОЛ-87)" → Run workflow
+  3. Скачай APK из Artifacts через ~5 мин
+
+▶ НА ПК (Windows/Linux/Mac):
+  Нужно: Node.js 18+, JDK 17, Android Studio
+  cd sokol-apk
+  bash build-apk.sh
+  → готовый файл: sokol87-debug.apk
+
+▶ НА ТЕЛЕФОНЕ (Termux):
+  См. подробную инструкцию в README.md (Способ 2)
+
+Параметры приложения (capacitor.config.json):
+  имя: СОКОЛ-87 · пакет: com.celesteal.sokol87
+  альбомная ориентация, фуллскрин, экран не гаснет
+
+Иконка: resources/icon.svg (+ gen-icons.sh для PNG-набора)
+Подробности и решение проблем: README.md
